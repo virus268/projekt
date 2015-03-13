@@ -1,0 +1,26 @@
+git init  			//inicjalizuje gita
+git status 			//sprawdza status poczekalnij
+git log 			//sprawdza status commitow
+git log -p -2   		// -p - pokazuje zmiany, -2 - ilosc commitow wyswietlonych
+git log --stat  		//skrocone statystyki commitow
+git diff   		        //zmieny w poczekalni
+git add . 			//dodaj caly folder
+git add plik.txt 		//dodaj plik 
+git clone git://github.com/virus268/projekt.git nazwa_folderu //klonuje repo z huba
+git commit 			// komituje 
+git commit -m "nazwa_comitu"    //komituje do nazwy repo
+git commit -a -m "komentarz"    //...wszystkie pliku zmienione lub usuniete
+git commit --amend -m 		//"zmiana commita"
+git remote add origin https://github.com/virus268/projekt.git
+git push -u origin master
+gitk 				//gui gita
+git branch 			//wyswietl galezie
+git branch nazwa_galezi		//stworzenie nowej galezi 
+git checkout nazwa_galezi 	//zmiana galezi  (lepiej widoczne w gui komedna gitk)
+git branch -d nazwa_galezi      //usuwanie galezi   
+git reset --hard nr_commita     //przywracanie commita (uwaga przy przywracaniu wczesniejszych usuwa pozniejsze commity)
+git reset --hard HEAD		//przywracanie commita ostatniego     
+git remote 			//wyswietlanie repo
+git remote add nazwa_repo git://github.com/user/nazwa.git  //tworzy repo
+git remote rm nazwa 		//usuwa repo
+git push origin +master         //zmienia repo na github
